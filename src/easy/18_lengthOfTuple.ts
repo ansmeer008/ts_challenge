@@ -24,7 +24,7 @@
 
 type Length<T extends readonly any[]> = T["length"];
 
-//혹은
+//혹은 infer 키워드 사용해서 작성도 가능함 
 //type Length<T extends readonly any[]> = T extends {length: infer P}? P : never
 
 /* _____________ Test Cases _____________ */
